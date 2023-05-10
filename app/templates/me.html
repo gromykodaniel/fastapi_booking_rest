@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Профиль</h1>
+<div style="position: center">
+       <h3>  Почта - {{ me.email }}   </h3>
+</div>
+
+Бронирования :
+<div style="position: center">
+
+       {% for booking in bookings %}
+              <h4> Комната - {{booking.room_id}} </h4>
+              <h5>С {{booking.date_from}} по {{booking.date_to}}</h5>
+              </h6> Итоговая цена - {{booking.total_cost}}</h4>
+       {% endfor %}
+</div>
+
+{% endblock %}
