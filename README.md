@@ -1,12 +1,11 @@
-#Проект API Cервиса бронирования отелей
-##О проекте:
+# Проект API Cервиса бронирования отелей
+## О приложении:
 Проект  представляет собой cервис,
 в которой пользователи имеют возможность создать учетную запись, 
 возможность просмотра свободных отелей и номер ,бронь. 
 Он предоставляет клиентам доступ к базе данных. Данные передаются в формате JSON.
-
 Примененные технологии:
-###Backend
+### Backend
 + API — FastAPI
 + База Данных — PostgreSQL
 + Кэширование — Redis
@@ -14,7 +13,7 @@
 + Контейнеризация — Docker и Docker Compose
 + Мониторинг - Grafana , Prometheus
 + Логирование - Centry
-###Python
+### Python
 + Автоматическое тестирование — pytest
 + Валидация данных — Pydantic
 + ORM — SQLAlchemy
@@ -26,7 +25,7 @@
 git clone git@github.com:gromykodaniel/fastapi_booking_rest.git
 cd api_final_yatube
 ```
-###Cоздать и активировать виртуальное окружение:
+### Cоздать и активировать виртуальное окружение:
 Виртуальное окружение должно использовать Python 3.9
 
 ```
@@ -41,14 +40,14 @@ source venv/bin/activate
 ```
 source venv/scripts/activate
 ```
-###Установка зависимостей из файла requirements.txt:
+### Установка зависимостей из файла requirements.txt:
 ```
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 
-###Примеры запросов к API:
+### Примеры запросов к API:
 POST-запрос на эндпоинт api/v1/posts/:
 ```
 {
